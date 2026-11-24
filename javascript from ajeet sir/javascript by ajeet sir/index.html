@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>enter the name you want to know more about</h1>
+    <input  type="text"  id="name" placeholder="name">
+    <button onclick="check()">check</button>
+    <h1 id="mess"></h1>
+    <img id="photo" width="300" style="display: none;">
+    <audio id="audio" loop controls autoplay muted></audio>
+    <video id="video" controls autoplay loop muted ></video>
+    
+    <button onclick="stopaudio()">🤬stop audio</button>
+
+    <script >
+        function check(){
+            let value= document.getElementById("name").value;
+            let photo=document.getElementById("photo");
+            let audio=document.getElementById("audio");
+            let video=document.getElementById("video");
+            let message=document.getElementById("mess")
+            if(value.toLowerCase()=="saurabh"){
+                message.innerHTML="if you think you are bad,then i am your competition! 😎😎";
+
+                 photo.src ="saurabh.jpg";
+                 photo.style.display="block";
+
+                 audio.src = "saurabh.wav";
+                 audio.loop="true";
+                 audio.style.display="block";
+                 audio.play();
+
+                 video.src="saurabh.mp4";
+                 video.loop="true";
+                 video.style.display="block";
+                 video.play();
+
+              }
+              else{
+                message.innerHTML="akshar ye bate karte h tum hoti to aisa hota...tum hoti to waisa hota..agar tum na hoti to ..apne pass bhi paisa hota🤣🤣🤣🤣";
+                photo.style.display = "none";
+
+               audio.src="saurabh1.wav";
+               audio.loop="true";
+               audio.style.display="block";
+               audio.play();
+
+               video.src="saurabh1.mp4";
+               video.loop="true";
+               video.style.display="block";
+               video.play();
+            }
+
+              }
+        
+    </script>
+   
+    
+</body>
+</html>
