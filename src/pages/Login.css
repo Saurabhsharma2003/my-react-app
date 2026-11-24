@@ -1,0 +1,114 @@
+
+.login-page {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  box-sizing: border-box;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1478720568477-152d9b164e26");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  background: #1c1c1c;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  color: white;
+  box-sizing: border-box;
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #e50914;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #292929;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.login-card input:focus {
+  border-color: #e50914;
+}
+
+.login-card input::placeholder {
+  color: #aaa;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e50914;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: #b80710;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 25px;
+  color: #ccc;
+}
+
+.signup-text a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px 18px;
+  }
+}
